@@ -10,6 +10,14 @@ import { Section } from '../styles/GlobalComponents';
 const Home = () => {
   return (
     <Layout>
+      <title>
+        {process.env.NEXT_PUBLIC_NAME} - Full Stack Developer - Oleksii Krasiuk
+      </title>
+      <meta 
+       name='description'
+       content={`I am ${process.env.NEXT_PUBLIC_NAME}, a full stack developer based in ukriane.`}
+      />
+
       <Section grid>
         <Hero />
         <BgAnimation />

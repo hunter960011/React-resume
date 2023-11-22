@@ -1,18 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { CarouselButton, CarouselButtonDot, CarouselButtons } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+// const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  // const scroll = (node, left) => {
+  //   return node.scrollTo({ left, behavior: 'smooth' });
+  // }
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -46,9 +46,11 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I'm a passionate full stack developer with 5 years of experience in web development and Mobile development. <br />
+      A truly seasoned developer is one who understands clearly the requirements of the client and creates the perfect result in the client's mind. <br />
+      It's just me.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
@@ -97,7 +99,7 @@ const Timeline = () => {
             </CarouselMobileScrollNode>
           ))}
         </>
-      </CarouselContainer>
+      </CarouselContainer> */}
       <CarouselButtons>
         {TimeLineData.map((item, index) => {
           return (

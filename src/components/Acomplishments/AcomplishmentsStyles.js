@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Boxes = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin: 24px 0 40px;
 
@@ -15,7 +15,7 @@ export const Boxes = styled.div`
 
   @media ${props => props.theme.breakpoints.sm}{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     max-width: 500px;
     margin: 24px auto;
@@ -46,7 +46,7 @@ export const Box = styled.div`
     }
   }
 `
-export const BoxNum = styled.h5`
+export const BoxTime = styled.h5`
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -65,10 +65,10 @@ export const BoxNum = styled.h5`
 }
 `
 
-export const BoxText = styled.p`
+export const BoxCompany = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);

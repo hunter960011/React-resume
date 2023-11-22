@@ -58,7 +58,7 @@ export const SectionText = styled.p`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 

@@ -1,23 +1,21 @@
 import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, BoxTime, BoxCompany } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+  { time: '2019.9 - 2020.3', company: 'RIVERIT-Intern'},
+  { time: '2020.4 - 2021.4', company: 'RIVERIT-Frontend developer', }
 ];
 
 const Acomplishments = () => (
   <Section>
-    <SectionTitle>Personal Achievements</SectionTitle>
+    <SectionTitle>Work Experience</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
-          <BoxNum>{`${card.number}+`}</BoxNum>
-          <BoxText>{card.text}</BoxText>
+          <BoxTime>{card.time}</BoxTime>
+          <BoxCompany>{card.company}</BoxCompany>
         </Box>
       ))}
     </Boxes>
